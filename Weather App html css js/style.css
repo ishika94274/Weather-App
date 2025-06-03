@@ -125,3 +125,101 @@ body {
 .location-not-found img {
   width: 80%;
 }
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 599px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .search-box input {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .search-box button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .weather-box .temperature {
+    font-size: 32px;
+  }
+
+  .weather-box .description {
+    font-size: 18px;
+  }
+
+  .weather-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .humidity,
+  .wind {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .weather-details i {
+    font-size: 28px;
+  }
+
+  .text span {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .search-box input {
+    font-size: 18px;
+  }
+
+  .search-box button {
+    font-size: 18px;
+  }
+
+  .weather-box .temperature {
+    font-size: 36px;
+  }
+
+  .weather-box .description {
+    font-size: 20px;
+  }
+
+  .weather-details {
+    gap: 20px;
+  }
+}
+
+/* Large devices (desktops, 1025px and above) */
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 400px;
+  }
+
+  .weather-box .temperature {
+    font-size: 40px;
+  }
+
+  .weather-box .description {
+    font-size: 22px;
+  }
+
+  .weather-details .text {
+    font-size: 16px;
+  }
+
+  .weather-details i {
+    font-size: 36px;
+  }
+}
+
+
